@@ -5,7 +5,7 @@ node{
             sh "ssh root@${IP} docker rm -f Flaskex"
         }
         catch(exc){
-            sh "Echo container deleted"
+            sh "echo container deleted"
         }
     }
 
