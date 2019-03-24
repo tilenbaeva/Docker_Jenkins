@@ -1,0 +1,11 @@
+[Unit]
+Description=My Script Service
+After=multi-user.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python /flaskex/app.py
+StandardInout=tty-force
+
+[Install]
+WantedBy=multi-user.target
